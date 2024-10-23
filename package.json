@@ -1,0 +1,37 @@
+{
+  "name": "srl-highlight",
+  "displayName": "SRL-Highlight",
+  "description": "Syntax Highlight for the SRL language",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.54.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "srl",
+        "aliases": [
+          "Structured Rule Language",
+          "srl"
+        ],
+        "extensions": [
+          ".srl"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "srl",
+        "scopeName": "source.srl",
+        "path": "./syntaxes/srl.tmLanguage.json"
+      }
+    ]
+  },
+  "dependencies": {
+    "srl-highlight": "file:"
+  }
+}

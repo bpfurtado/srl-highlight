@@ -3,6 +3,7 @@
   "displayName": "SRL-Highlight",
   "description": "Syntax Highlight for the SRL language",
   "version": "0.0.1",
+  "publisher": "BrunoPatiniFurtado",
   "engines": {
     "vscode": "^1.54.0"
   },

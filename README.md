@@ -1,65 +1,78 @@
-# srl-highlight README
+# SRL Highlight
 
-This is the README for your extension "srl-highlight". After writing up a brief description, we recommend including the following sections.
+**SRL Highlight** is a Visual Studio Code extension that provides syntax highlighting for the **Structured Rule Language (SRL)**. This extension is designed to improve code readability and assist developers in writing SRL with visual cues for keywords, operators, data types, and more.
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+-   Syntax highlighting for SRL keywords, operators, and data types.
+-   Highlights:
+    -   **Keywords**: `if`, `while`, `return`, etc.
+    -   **Data Types**: `string`, `integer`, `real`, `date`, `boolean`.
+    -   **Constants**: `true`, `false`, `null`, `known`, `unknown`, `available`, `unavailable`.
+    -   **Comments**: Single-line (`//`) and multi-line (`/* ... */`).
+    -   **Strings**: Double-quoted strings with escape sequences.
+    -   **Numbers**: Integer and real numbers.
+    -   **Date Formats**: Special syntax for date formats like `'01/01/1900'`.
+    -   **Operators**: Logical (`and`, `or`, `not`) and comparison operators (`==`, `!=`, `<`, `<=`, `>`, `>=`).
+    -   **Function Calls** and **Field Access**: Highlighting for function calls and attribute access (e.g., `object.field`).
 
-For example if there is an image subfolder under your extension project workspace:
+## Installation
 
-\!\[feature X\]\(images/feature-x.png\)
+### From the Visual Studio Marketplace
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+1. Open Visual Studio Code.
+2. Go to the Extensions view (`Ctrl+Shift+X`).
+3. Search for **SRL Highlight**.
+4. Click **Install**.
 
-## Requirements
+### Manual Installation
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+1. Download the `.vsix` file from the [Releases](#) page.
+2. Open Visual Studio Code.
+3. Go to the Extensions view (`Ctrl+Shift+X`).
+4. Click the `...` (More Actions) button in the top right corner.
+5. Select **Install from VSIX...** and choose the downloaded file.
 
-## Extension Settings
+## Usage
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+1. Open a file with the `.srl` extension, or create a new file with this extension.
+2. The extension will automatically apply syntax highlighting to SRL code.
+3. Customize your theme if needed to adjust how SRL syntax is visually represented.
 
-For example:
+## Syntax Details
 
-This extension contributes the following settings:
+### Keywords
 
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+Highlighted control flow and reserved keywords:
 
-## Known Issues
+-   `if`, `while`, `for`, `return`, `then`, `increment`, `each`, `catch`, `try`, `is`, etc.
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+### Data Types
 
-## Release Notes
+Native SRL data types:
 
-Users appreciate release notes as you update your extension.
+-   `string`, `integer`, `real`, `date`, `boolean`.
 
-### 1.0.0
+### Constants
 
-Initial release of ...
+Supported constants:
 
-### 1.0.1
+-   `true`, `false`, `null`, `known`, `unknown`, `available`, `unavailable`.
 
-Fixed issue #.
+### Operators
 
-### 1.1.0
+Logical and comparison operators:
 
-Added features X, Y, and Z.
+-   Logical: `and`, `or`, `not`.
+-   Comparison: `<`, `<=`, `>`, `>=`, `==`, `!=`, `+`, `-`, `/`, `*`.
 
----
+### Comments
 
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+-   **Single-line**: `// This is a comment`
+-   **Multi-line**:
+    ```srl
+    /*
+     This is a
+     multi-line comment
+    */
+    ```

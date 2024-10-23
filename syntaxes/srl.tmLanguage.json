@@ -32,7 +32,7 @@
 			"patterns": [
 				{
 					"name": "entity.name.function.srl",
-					"match": "\\b([a-zA-Z_][a-zA-Z0-9_]*)\\s*(?=\\()"
+					"match": "\\b([a-zA-Z_][a-zA-Z0-9_]*)\\("
 				}
 			]
 		},
@@ -53,7 +53,7 @@
 			"patterns": [
 				{
 					"name": "keyword.control.srl",
-					"match": "\\b(if|else|while|for|return|then|it|increment|by|satisfies|at|least|such|that|each|catch|with|try|is|some|a|an|initially|do|fixed|array|of|as|later|earlier|than|ignoring|case)\\b"
+					"match": "\\b(if|else|while|for|return|then|it|association|from|equal|to|increment|by|in|starts|satisfies|at|least|such|that|each|catch|with|try|is|some|a|an|initially|do|fixed|array|of|as|later|earlier|than|ignoring|case)\\b"
 				}
 			]
 		},
@@ -129,6 +129,10 @@
 				{
 					"name": "storage.type.primitive.date.srl",
 					"match": "\\bdate\\b"
+				},
+				{
+					"name": "storage.type.primitive.Date.srl",
+					"match": "\\bDate\\b"
 				},
 				{
 					"name": "storage.type.primitive.boolean.srl",

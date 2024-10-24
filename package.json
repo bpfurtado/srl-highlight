@@ -12,8 +12,11 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/bpfurtado/srl-highlight.git"
+    "url": "git+https://github.com/bpfurtado/srl-highlight.git"
   },
+  "activationEvents": [
+    "onLanguage:srl"
+  ],
   "contributes": {
     "languages": [
       {
@@ -38,5 +41,19 @@
   },
   "dependencies": {
     "srl-highlight": "file:"
+  },
+  "main": "./out/extension.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Bruno Patini Furtado",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bpfurtado/srl-highlight/issues"
+  },
+  "homepage": "https://github.com/bpfurtado/srl-highlight#readme",
+  "devDependencies": {
+    "@types/vscode": "^1.94.0",
+    "typescript": "^5.6.3"
   }
 }

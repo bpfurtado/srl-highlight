@@ -73,6 +73,23 @@ function handleLineTerminators(line) {
                 newLine += '}\n';
             }
         }
+        //also check if the line has a comment after the ; character
+        else if (currentChar === ';' && line.includes('//')) {
+            //add the characters after the ; character to the new line
+            newLine += currentChar;
+            //get the index of the ; character
+            const index = line.indexOf(';');
+            //get the substring of the line after the ; character
+            const subLine = line.substring(index + 1);
+            //add the substring to the new line
+            newLine += subLine;
+            //add the new line to the new lines array
+            newLines.push(newLine);
+            //clear the new line variable
+            newLine = '';
+            //skip the rest of the line
+            idx = line.length;
+        }
         else if (currentChar === ';') {
             // Semicolon should end the current line
             newLine += ';\n';

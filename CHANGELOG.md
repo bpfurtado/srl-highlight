@@ -1,9 +1,9 @@
 # Change Log
 
-All notable changes to the "srl-highlight" extension will be documented in this file.
+## [0.0.1] - 2024-10-23
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+The initial release of the SRL Highlight extension for Visual Studio Code.
 
-## [Unreleased]
+## [0.0.2] - 2024-10-24
 
-- Initial release
+Formatter added to the extension.

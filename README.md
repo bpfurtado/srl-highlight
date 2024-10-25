@@ -1,6 +1,8 @@
-# SRL Highlight
+# SRL Highlight and Formatting
 
 **SRL Highlight** is a Visual Studio Code extension that provides syntax highlighting for the **Structured Rule Language (SRL)**. This extension is designed to improve code readability and assist developers in writing SRL with visual cues for keywords, operators, data types, and more.
+
+**Formatting**: it also provides code formatting for SRL files. It automatically indents code blocks, aligns assignments, and formats comments to improve the overall readability of SRL code.
 
 ## Features
 

@@ -2,10 +2,10 @@
   "name": "srl-highlight",
   "displayName": "SRL-Highlight",
   "description": "Syntax Highlight for the SRL language",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "BrunoPatiniFurtado",
   "engines": {
-    "vscode": "^1.54.0"
+    "vscode": "^1.94.0"
   },
   "categories": [
     "Programming Languages"
